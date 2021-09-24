@@ -1,11 +1,12 @@
 import React from "react"
-import {View, Text} from "react-native"
+import {View, Text, SafeAreaView} from "react-native"
+import HeaderTabs from "../components/HeaderTabs"
 
 const Home = () => {
   return (
-    <View>
-      <Text>HOME</Text>
-    </View>
+    <SafeAreaView>
+      <HeaderTabs />
+    </SafeAreaView>
   )
 }
 export default Home
