@@ -3,7 +3,7 @@ import {View, Text, Image} from "react-native"
 
 const yelpRestaurantInfo = {
   name: "The Random Restaurant",
-  restaurantImage:
+  image_url:
     "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
   price: "$$",
   reviews: "(1500+)",
@@ -12,8 +12,7 @@ const yelpRestaurantInfo = {
 }
 
 export default function About(props) {
-  const {name, restaurantImage, price, reviews, rating, categories} =
-    props.route.params
+  const {name, image, price, reviews, rating, categories} = props.route.params
 
   const formattedCategories = categories.map((cat) => cat.title).join(" • ")
 
@@ -22,7 +21,7 @@ export default function About(props) {
   } • ${rating} • ${reviews}`
   return (
     <View>
-      <RestaurantImage image={restaurantImage} />
+      <RestaurantImage image={image} />
       <RestaurantName name={name} />
       <RestaurantDescription description={restaurantDescription} />
     </View>
