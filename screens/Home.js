@@ -13,7 +13,7 @@ import SearchBar from "../components/homeScreen/SearchBar"
 const YELP_API_KEY =
   "sdXlyqxGKYfNzxFySsxHf2vFOGZk2P5hozz63iJhO3tG2ugoIOYCoq-MN1Ax_lvfICZzO3m9HRPWY0Shjej1n2oArFh68rkBln2uOLfsXltL8x6eBzJW1NL_TwC5YXYx"
 
-export default function Home() {
+export default function Home({navigation}) {
   const [restaurantData, setRestaurantData] = useState(localRestaurants)
   const [city, setCity] = useState()
   const [activeTab, setActiveTab] = useState("Delivery")
@@ -26,7 +26,18 @@ export default function Home() {
       },
     }
 
-    return fetch(yelpUrl, apiOptions)
+    // Promise.all(yelpUrl, apiOptions)
+    //   .then((res) => res.json())
+    //   .then((json) =>
+    //     setRestaurantData(
+    //       json.businesses.filter((business) =>
+    //         business.transactions.includes(activeTab.toLowerCase())
+    //       )
+    //     )
+    //   )
+    //   .catch((err) => console.log(err))
+
+    fetch(yelpUrl, apiOptions)
       .then((res) => res.json())
       .then((json) =>
         setRestaurantData(
@@ -49,7 +60,10 @@ export default function Home() {
       </View>
       <ScrollView>
         <Categories showsVerticalScrollIndicator={false} />
-        <RestaurantItems restaurantData={restaurantData} />
+        <RestaurantItems
+          restaurantData={restaurantData}
+          navigation={navigation}
+        />
       </ScrollView>
       <Divider width={1} />
       <Bottomtabs />
