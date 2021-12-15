@@ -11,16 +11,15 @@ const yelpRestaurantInfo = {
   categories: [{title: "Fast-Food"}, {title: "Comfort Food"}],
 }
 
-const {name, restaurantImage, price, reviews, rating, categories} =
-  yelpRestaurantInfo
+export default function About(props) {
+  const {name, restaurantImage, price, reviews, rating, categories} =
+    props.route.params
 
-const formattedCategories = categories.map((cat) => cat.title).join(" • ")
+  const formattedCategories = categories.map((cat) => cat.title).join(" • ")
 
-const restaurantDescription = `${formattedCategories} ${
-  price ? " • " + price : ""
-} • ${rating} • ${reviews}+`
-
-export default function About() {
+  const restaurantDescription = `${formattedCategories} ${
+    price ? " • " + price : ""
+  } • ${rating} • ${reviews}`
   return (
     <View>
       <RestaurantImage image={restaurantImage} />
