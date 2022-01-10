@@ -73,7 +73,7 @@ https://user-images.githubusercontent.com/80421938/148711558-5b49aff4-536b-43d1-
    <strong><i>Note: After running expo start you will see a page like the one below . If you want to run it in your phone download the Expo App on the Play Store
    or Expo Go for Apple and scan the QR code with your phone and the project will  open automatically. You can also run it on the browser
     by clicking "Run in Web browser" if that works better for you.</i></strong>
-  <img width="900" alt="Expo-Server-Image-ssilva22-Sebwebdesign" src="https://user-images.githubusercontent.com/80421938/148712957-eea00a39-4073-4019-9c82-8f09b32a6281.png">
+    <img width="900" alt="Expo-Server-Image-ssilva22-Sebwebdesign" src="https://user-images.githubusercontent.com/80421938/148712957-eea00a39-4073-4019-9c82-8f09b32a6281.png">
 
 ## Contributing
 
