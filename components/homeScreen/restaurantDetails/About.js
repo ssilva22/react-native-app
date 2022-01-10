@@ -18,7 +18,7 @@ export default function About(props) {
 
   const restaurantDescription = `${formattedCategories} ${
     price ? " • " + price : ""
-  } • ${rating} • ${reviews}`
+  } • ${rating} • (${reviews})+`
   return (
     <View>
       <RestaurantImage image={image} />
