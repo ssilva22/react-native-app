@@ -48,6 +48,13 @@ https://user-images.githubusercontent.com/80421938/148711558-5b49aff4-536b-43d1-
 
 
 ## Buit With
+* React-Native
+* Expo
+* Redux
+* Firebase
+* Google Places API
+* Yelp API
+
 
 ## 🚀 How to use
 
