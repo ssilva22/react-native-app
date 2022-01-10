@@ -70,9 +70,9 @@ https://user-images.githubusercontent.com/80421938/148711558-5b49aff4-536b-43d1-
     expo start
    ```
    
-  - Note: After running expo start you will see a page like the one below . If you want to run it in your phone download the Expo App on the Play Store
-  - or Expo Go for Apple and scan the QR code with your phone and the project will be open automatically, you can also run it on the browser
-  -  by clicking "Run in Web browser" if that works better for you.
+   Note: After running expo start you will see a page like the one below . If you want to run it in your phone download the Expo App on the Play Store
+   or Expo Go for Apple and scan the QR code with your phone and the project will be open automatically. You can also run it on the browser
+    by clicking "Run in Web browser" if that works better for you.
 
 
 ## Contributing
