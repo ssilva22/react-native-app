@@ -16,7 +16,9 @@
 </p>
 
 ## DEMO
-https://www.youtube.com/watch?v=AhcFcq87UoE
+
+https://user-images.githubusercontent.com/80421938/148711558-5b49aff4-536b-43d1-ba9a-c9d3bbf33183.mp4
+
 
 
 ## 🚀 How to use
